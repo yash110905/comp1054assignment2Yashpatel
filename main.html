@@ -1,94 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Album Layout with 3D Hover</title>
-  <!-- Bootstrap 4.5.2  -->
-  <!-- taken from "https://stackpath.bootstrapcdn.com" -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yash Patel | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+    defer
+  ></script>
 </head>
-
 <body>
-    <!-- option button with dropdown -->
-<div class="option-menu">
-  <button class="option-btn"> ☰ </button>
-  <div class="dropdown-panel">
-    <a href="#">About Us</a>
-    <a href="#">Contact</a>
-    <a href="#">Follow on Twitter</a>
-    <a href="#">Like on Facebook</a>
+  <div class="particles">
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
-</div>
-  <header style="background-color: #333; padding: 10px;">
-  <div style="max-width: 960px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-    <a href="#" style="color: white; text-decoration: none; font-weight: bold; font-size: 1.2rem;">
-      Album
-    </a>
+
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Yash Patel</h1>
+      <p>Cybersecurity & Web Development Enthusiast</p>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </div>
   </div>
-</header>
 
+  <header class="sticky-nav">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- hero banner -->
-  <section class="hero text-center bg-light mb-0">
-
+  <section class="about" id="about">
     <div class="container">
-      <h1 class="hero-heading">Album example</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc.</p>
+      <h2>About Me</h2>
       <p>
-        <a href="#" class="btn btn-primary my-2">Primary Action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary Action</a>
+        I'm a Computer Programming and Analysis student passionate about
+        <strong>cybersecurity</strong>, <strong>web development</strong>, and
+        creating cutting-edge solutions. Inspired by clean design and
+        interactivity, I build experiences that engage users.
       </p>
     </div>
   </section>
 
-  <!-- Album Grid -->
-  <div class="album py-5 bg-light">
+  <section class="projects-section" id="projects">
     <div class="container">
-      <div class="row">
-        <!-- multiple cards with random images -->
-        <div class="col-md-4">
-          <div class="card shadow-sm custom-card">
-            <img src="https://html.phoenixcoded.net/light-able/bootstrap/assets/images/light-box/l3.jpg" class="card-img-top" alt="Image">
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button class="btn btn-sm btn-outline-primary">View</button>
-                  <button class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="C:\Users\ASUS\Downloads\student record.png" alt="Student Records Website" />
+          <div class="card-content">
+            <h3>Student Records Website</h3>
+            <p>Responsive PHP & MySQL project for managing student records with custom UI.</p>
+            <a href="#" class="btn small">View Project</a>
           </div>
         </div>
-
-        <!-- Duplicate with different images -->
-        <div class="col-md-4"><div class="card shadow-sm custom-card"><img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg" class="card-img-top"><div class="card-body"><p class="card-text">Another beautiful photo for this album collection.</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><button class="btn btn-sm btn-outline-primary">View</button><button class="btn btn-sm btn-outline-secondary">Edit</button></div><small class="text-muted">12 mins</small></div></div></div></div>
-        <div class="col-md-4"><div class="card shadow-sm custom-card"><img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=clouds-cloudy-countryside-236047.jpg&fm=jpg" class="card-img-top"><div class="card-body"><p class="card-text">Cool shot to enhance the gallery aesthetics.</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><button class="btn btn-sm btn-outline-primary">View</button><button class="btn btn-sm btn-outline-secondary">Edit</button></div><small class="text-muted">15 mins</small></div></div></div></div>
-        <div class="col-md-4"><div class="card shadow-sm custom-card"><img src="https://tse4.mm.bing.net/th/id/OIP.PikUdeXdPP5f3FAwKZYtlQHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top"><div class="card-body"><p class="card-text">Supporting text that naturally flows into additional content.</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><button class="btn btn-sm btn-outline-primary">View</button><button class="btn btn-sm btn-outline-secondary">Edit</button></div><small class="text-muted">18 mins</small></div></div></div></div>
-        <div class="col-md-4"><div class="card shadow-sm custom-card"><img src="https://cdn.pixabay.com/photo/2020/10/23/07/18/sea-5677914_640.jpg" class="card-img-top"><div class="card-body"><p class="card-text">Another sample card with a beautiful thumbnail.</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><button class="btn btn-sm btn-outline-primary">View</button><button class="btn btn-sm btn-outline-secondary">Edit</button></div><small class="text-muted">21 mins</small></div></div></div></div>
-        <div class="col-md-4"><div class="card shadow-sm custom-card"><img src="https://i.pinimg.com/originals/27/bc/87/27bc8773c7f33522a73989315866eb66.jpg" class="card-img-top"><div class="card-body"><p class="card-text">Clean and simple design to match the album layout.</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><button class="btn btn-sm btn-outline-primary">View</button><button class="btn btn-sm btn-outline-secondary">Edit</button></div><small class="text-muted">30 mins</small></div></div></div></div>
+        <div class="project-card">
+          <img src="C:\Users\ASUS\Downloads\treasure hunt.png" alt="Treasure Hunt Game" />
+          <div class="card-content">
+            <h3>Treasure Hunt Game</h3>
+            <p>A text-based C# game with randomness, adaptive interactions & level progression.</p>
+            <a href="#" class="btn small">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="C:\Users\ASUS\Downloads\networking.png" alt="Networking Labs" />
+          <div class="card-content">
+            <h3>Networking Lab Configurations</h3>
+            <p>Hands-on Cisco configurations, subnetting, and troubleshooting LAN/WAN issues.</p>
+            <a href="#" class="btn small">View Project</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- footer -->
-  <footer class="text-muted text-center py-4 bg-dark text-white">
+  </section>
+
+  <section class="skills-section" id="skills">
     <div class="container">
-      <p class="mb-1">Assignment 2 css @2025</p>
+      <h2>Skills</h2>
+      <div class="skills-cloud">
+        <span class="skill">C#</span>
+        <span class="skill">C++</span>
+        <span class="skill">Python</span>
+        <span class="skill">HTML & CSS</span>
+        <span class="skill">PHP & MySQL</span>
+        <span class="skill">Networking</span>
+        <span class="skill">Cybersecurity</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Let's collaborate! Feel free to reach out via email or connect with me on LinkedIn.</p>
+      <p>Email: <a href="mailto:pyash4521@gmail.com">pyash4521@gmail.com</a></p>
+      <p>LinkedIn: 
+        <a href="https://www.linkedin.com/in/yash-patel-098ba8342" target="_blank">
+          www.linkedin.com/in/yash-patel-098ba8342
+        </a>
+      </p>
+      <a href="mailto:pyash4521@gmail.com" class="btn small">Send Message</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Yash Patel.</p>
     </div>
   </footer>
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const optionBtn = document.querySelector(".option-btn");
-  const dropdown = document.querySelector(".dropdown-panel");
-
-  optionBtn.addEventListener("click", function () {
-    dropdown.classList.toggle("show");
-  });
-});
-</script>
-
 </body>
 </html>
